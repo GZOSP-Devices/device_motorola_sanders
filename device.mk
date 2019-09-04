@@ -211,8 +211,8 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -446,12 +446,18 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0
 
 # Wi-Fi Display
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
 
 # CarrierConfig
 PRODUCT_PACKAGES += \
     CarrierConfig
+
+PRODUCT_BOARD_PLATFORM := msm8953
+
+PRODUCT_USES_QCOM_HARDWARE := true
+
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
