@@ -15,3 +15,6 @@
 
 PRODUCT_MAKEFILES := \
 	$(LOCAL_DIR)/gzosp_sanders.mk
+
+COMMON_LUNCH_CHOICES := \
+    gzosp_sanders-userdebug
