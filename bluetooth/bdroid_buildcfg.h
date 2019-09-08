@@ -17,8 +17,9 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#include <cutils/properties.h>
-#include <string.h>
+#include <stdint.h>
+
+int32_t property_get_int32(const char *key, int32_t default_value);
 
 #define BTM_DEF_LOCAL_NAME "Moto G5S Plus"
 #define BLUETOOTH_QTI_SW TRUE
